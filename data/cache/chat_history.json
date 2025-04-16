@@ -1,0 +1,43 @@
+[
+    {
+        "name": "tôi là ai?",
+        "messages": [
+            {
+                "role": "user",
+                "content": "tôi là ai?",
+                "time": "06:59:37 14-04-2025",
+                "message": "tôi là ai?"
+            },
+            {
+                "role": "user",
+                "content": "3 - Đôi khi",
+                "time": "06:59:53 14-04-2025",
+                "message": "3 - Đôi khi"
+            },
+            {
+                "role": "assistant",
+                "content": "Cảm ơn bạn đã chia sẻ! Tôi ở đây để hỗ trợ bạn.\n\n**Vấn đề**: Câu hỏi 'Bạn có cảm thấy thoải mái với trạng thái tâm lý hiện tại?' cho thấy bạn đang suy ngẫm về cảm xúc ở mức độ 3 - đôi khi. Mỗi người có trải nghiệm riêng, và điều này rất bình thường.\n\n**Cảm nhận**: Khi chọn '3 - Đôi khi', có thể bạn đang chú ý đến một khía cạnh tâm lý cần quan tâm. Những cảm xúc này đôi khi khiến ta tự hỏi liệu mình có ổn không, và điều đó hoàn toàn dễ hiểu.\n\n**Gợi ý**: Hãy thử dành thời gian suy ngẫm hoặc chia sẻ với ai đó bạn tin tưởng. Các hoạt động như viết nhật ký, thiền, hoặc đi bộ có thể giúp. Nếu muốn, tôi có thể đưa ra thêm câu hỏi để khám phá sâu hơn.\n\n*(Lưu ý: Tôi là chatbot hỗ trợ tâm lý, không phải bác sĩ. Nếu cần, hãy liên hệ chuyên gia tâm lý.)*",
+                "time": "06:59:53 14-04-2025",
+                "message": "Cảm ơn bạn đã chia sẻ! Tôi ở đây để hỗ trợ bạn.\n\n**Vấn đề**: Câu hỏi 'Bạn có cảm thấy thoải mái với trạng thái tâm lý hiện tại?' cho thấy bạn đang suy ngẫm về cảm xúc ở mức độ 3 - đôi khi. Mỗi người có trải nghiệm riêng, và điều này rất bình thường.\n\n**Cảm nhận**: Khi chọn '3 - Đôi khi', có thể bạn đang chú ý đến một khía cạnh tâm lý cần quan tâm. Những cảm xúc này đôi khi khiến ta tự hỏi liệu mình có ổn không, và điều đó hoàn toàn dễ hiểu.\n\n**Gợi ý**: Hãy thử dành thời gian suy ngẫm hoặc chia sẻ với ai đó bạn tin tưởng. Các hoạt động như viết nhật ký, thiền, hoặc đi bộ có thể giúp. Nếu muốn, tôi có thể đưa ra thêm câu hỏi để khám phá sâu hơn.\n\n*(Lưu ý: Tôi là chatbot hỗ trợ tâm lý, không phải bác sĩ. Nếu cần, hãy liên hệ chuyên gia tâm lý.)*"
+            },
+            {
+                "role": "user",
+                "content": "tôi không biết phải làm gì",
+                "time": "07:00:05 14-04-2025",
+                "message": "tôi không biết phải làm gì"
+            },
+            {
+                "role": "user",
+                "content": "5 - Luôn luôn",
+                "time": "07:00:10 14-04-2025",
+                "message": "5 - Luôn luôn"
+            },
+            {
+                "role": "assistant",
+                "content": "Cảm ơn bạn đã chia sẻ! Tôi ở đây để hỗ trợ bạn.\n\n**Vấn đề**: Câu hỏi 'Bạn có cảm thấy thoải mái với trạng thái tâm lý hiện tại?' cho thấy bạn đang suy ngẫm về cảm xúc ở mức độ 5 - luôn luôn. Mỗi người có trải nghiệm riêng, và điều này rất bình thường.\n\n**Cảm nhận**: Khi chọn '5 - Luôn luôn', có thể bạn đang chú ý đến một khía cạnh tâm lý cần quan tâm. Những cảm xúc này đôi khi khiến ta tự hỏi liệu mình có ổn không, và điều đó hoàn toàn dễ hiểu.\n\n**Gợi ý**: Hãy thử dành thời gian suy ngẫm hoặc chia sẻ với ai đó bạn tin tưởng. Các hoạt động như viết nhật ký, thiền, hoặc đi bộ có thể giúp. Nếu muốn, tôi có thể đưa ra thêm câu hỏi để khám phá sâu hơn.\n\n*(Lưu ý: Tôi là chatbot hỗ trợ tâm lý, không phải bác sĩ. Nếu cần, hãy liên hệ chuyên gia tâm lý.)*",
+                "time": "07:00:10 14-04-2025",
+                "message": "Cảm ơn bạn đã chia sẻ! Tôi ở đây để hỗ trợ bạn.\n\n**Vấn đề**: Câu hỏi 'Bạn có cảm thấy thoải mái với trạng thái tâm lý hiện tại?' cho thấy bạn đang suy ngẫm về cảm xúc ở mức độ 5 - luôn luôn. Mỗi người có trải nghiệm riêng, và điều này rất bình thường.\n\n**Cảm nhận**: Khi chọn '5 - Luôn luôn', có thể bạn đang chú ý đến một khía cạnh tâm lý cần quan tâm. Những cảm xúc này đôi khi khiến ta tự hỏi liệu mình có ổn không, và điều đó hoàn toàn dễ hiểu.\n\n**Gợi ý**: Hãy thử dành thời gian suy ngẫm hoặc chia sẻ với ai đó bạn tin tưởng. Các hoạt động như viết nhật ký, thiền, hoặc đi bộ có thể giúp. Nếu muốn, tôi có thể đưa ra thêm câu hỏi để khám phá sâu hơn.\n\n*(Lưu ý: Tôi là chatbot hỗ trợ tâm lý, không phải bác sĩ. Nếu cần, hãy liên hệ chuyên gia tâm lý.)*"
+            }
+        ]
+    }
+]
