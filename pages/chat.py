@@ -15,7 +15,7 @@ st.markdown("<h1 style='text-align: center;'>Chatbot Tâm Lý Con Người</h1>"
 # Kiểm tra trạng thái đăng nhập
 if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
     st.error("Vui lòng đăng nhập trước khi truy cập trang trò chuyện.")
-    st.markdown("[Quay lại Trang chủ](./home.py)")  # Sửa thành home.py
+    st.markdown("[Quay lại Trang chủ](./home.py)")
     st.stop()
 
 # Khởi tạo session state
@@ -52,6 +52,11 @@ render_sidebar()
 for message in st.session_state.current_conversation:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
+        if "question" in message and "options" in message:
+            st.write(f"**Câu hỏi**: {message['question']}")
+            st.write("**Lựa chọn**:")
+            for option in message["options"]:
+                st.write(f"- {option}")
 
 # Xử lý trạng thái chờ đáp án
 if st.session_state.waiting_for_answer:
@@ -61,9 +66,11 @@ if st.session_state.waiting_for_answer:
         if st.button("Gửi đáp án"):
             try:
                 response = bot.process_answer(st.session_state.last_prompt, st.session_state.current_question, answer)
-                st.markdown(response)
+                # Lưu câu hỏi và lựa chọn trước khi xóa trạng thái
+                bot.save_message("assistant", f"**Câu hỏi**: {st.session_state.current_question}\n\n{response}", 
+                                question=st.session_state.current_question, 
+                                options=st.session_state.current_options)
                 bot.save_message("user", answer)
-                bot.save_message("assistant", response)
                 st.session_state.waiting_for_answer = False
                 st.session_state.current_question = None
                 st.session_state.current_options = []
@@ -87,6 +94,8 @@ if prompt := st.chat_input("Chia sẻ cảm xúc của bạn, tôi sẽ lắng n
                 st.markdown(result["response"])
                 st.write(f"**Câu hỏi**: {result['question']}")
                 st.radio("Chọn mức độ:", result["options"], key="initial_radio")
+            bot.save_message("assistant", f"{result['response']}\n\n**Câu hỏi**: {result['question']}", 
+                            question=result["question"], options=result["options"])
         else:
             with st.chat_message("assistant"):
                 st.markdown(result["response"])
