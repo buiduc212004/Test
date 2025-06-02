@@ -2,12 +2,11 @@
 import streamlit as st
 import sys
 import os
+from src.bot_logic import BotLogic
+from src.slide_bar import render_sidebar
 
 # Thêm thư mục gốc (Project/) vào sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from src.bot_logic import BotLogic
-from src.slide_bar import render_sidebar
 
 st.set_page_config(page_title="Trò chuyện", layout="wide", initial_sidebar_state="expanded")
 st.markdown("<h1 style='text-align: center;'>Chatbot Tâm Lý Con Người</h1>", unsafe_allow_html=True)
@@ -17,6 +16,10 @@ if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
     st.error("Vui lòng đăng nhập trước khi truy cập trang trò chuyện.")
     st.markdown("[Quay lại Trang chủ](./home.py)")
     st.stop()
+
+# Lấy username và user_info từ session (hoặc dùng giá trị mặc định cho demo)
+username = st.session_state.get("username", "demo_user")
+user_info = st.session_state.get("user_info", {"name": "Người dùng Demo", "age": 25})
 
 # Khởi tạo session state
 if "conversations" not in st.session_state:
@@ -38,9 +41,9 @@ if "current_options" not in st.session_state:
 if "last_prompt" not in st.session_state:
     st.session_state.last_prompt = ""
 
-# Khởi tạo BotLogic
+# Khởi tạo BotLogic với username và user_info
 try:
-    bot = BotLogic()
+    bot = BotLogic(username=username, user_info=user_info)
 except Exception as e:
     st.error(f"Lỗi khi khởi tạo chatbot: {str(e)}. Vui lòng kiểm tra Vector DB và mô hình.")
     st.stop()

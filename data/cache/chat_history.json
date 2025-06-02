@@ -39,5 +39,179 @@
                 "message": "Cảm ơn bạn đã chia sẻ! Tôi ở đây để hỗ trợ bạn.\n\n**Vấn đề**: Câu hỏi 'Bạn có cảm thấy thoải mái với trạng thái tâm lý hiện tại?' cho thấy bạn đang suy ngẫm về cảm xúc ở mức độ 5 - luôn luôn. Mỗi người có trải nghiệm riêng, và điều này rất bình thường.\n\n**Cảm nhận**: Khi chọn '5 - Luôn luôn', có thể bạn đang chú ý đến một khía cạnh tâm lý cần quan tâm. Những cảm xúc này đôi khi khiến ta tự hỏi liệu mình có ổn không, và điều đó hoàn toàn dễ hiểu.\n\n**Gợi ý**: Hãy thử dành thời gian suy ngẫm hoặc chia sẻ với ai đó bạn tin tưởng. Các hoạt động như viết nhật ký, thiền, hoặc đi bộ có thể giúp. Nếu muốn, tôi có thể đưa ra thêm câu hỏi để khám phá sâu hơn.\n\n*(Lưu ý: Tôi là chatbot hỗ trợ tâm lý, không phải bác sĩ. Nếu cần, hãy liên hệ chuyên gia tâm lý.)*"
             }
         ]
+    },
+    {
+        "name": "bạn là ai",
+        "messages": [
+            {
+                "role": "user",
+                "content": "bạn là ai",
+                "time": "23:06:33 01-06-2025",
+                "message": "bạn là ai"
+            },
+            {
+                "role": "assistant",
+                "content": "Đầu vào của bạn không rõ ràng. Vui lòng nhập câu hỏi hoặc chia sẻ cảm xúc để tôi hỗ trợ!\n\n**Ví dụ câu hỏi trực tiếp**: 'Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?'\n**Ví dụ yêu cầu câu hỏi trắc nghiệm**: 'Tôi đang cảm thấy buồn, hãy tạo câu hỏi tâm lý cho tôi.'",
+                "time": "23:06:33 01-06-2025",
+                "message": "Đầu vào của bạn không rõ ràng. Vui lòng nhập câu hỏi hoặc chia sẻ cảm xúc để tôi hỗ trợ!\n\n**Ví dụ câu hỏi trực tiếp**: 'Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?'\n**Ví dụ yêu cầu câu hỏi trắc nghiệm**: 'Tôi đang cảm thấy buồn, hãy tạo câu hỏi tâm lý cho tôi.'"
+            },
+            {
+                "role": "user",
+                "content": "Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?",
+                "time": "23:08:53 01-06-2025",
+                "message": "Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?"
+            },
+            {
+                "role": "assistant",
+                "content": "Xin chào! Tôi rất vui được trò chuyện với bạn về sức khỏe tâm thần. Tôi là một trợ lý AI chuyên về sức khỏe tâm thần, và tôi sẽ giúp bạn tìm hiểu về các vấn đề sức khỏe tâm thần.\n\nVề tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5, rối loạn lo âu là một rối loạn tâm thần được định nghĩa là một loạt các triệu chứng lo âu, căng thẳng, và khó chịu kéo dài hơn 6 tháng. Theo DSM-5, các triệu chứng của rối loạn lo âu bao gồm:\n\n* Lo âu hoặc căng thẳng kéo dài hơn 6 tháng\n* Lo âu hoặc căng thẳng gây khó khăn trong cuộc sống hàng ngày\n* Lo âu hoặc căng thẳng không được giải quyết sau khi có sự giúp đỡ\n* Lo âu hoặc căng thẳng gây ra khó khăn trong quan hệ với người khác\n\nĐể chẩn đoán rối loạn lo âu, bác sĩ sẽ đánh giá các triệu chứng của bạn và xem xét các yếu tố khác, chẳng hạn như lịch sử gia đình, kinh nghiệm cuộc sống, và các triệu chứng khác.\n\nTôi muốn hỏi bạn một câu hỏi: Bạn có cảm thấy lo âu hoặc căng thẳng trong cuộc sống hàng ngày không? (1 - Không bao giờ, 2 - Hiếm khi, 3 - Đôi khi, 4 - Thường xuyên, 5 - Luôn luôn)\n\nVui lòng trả lời câu hỏi này, và chúng ta sẽ tiếp tục trò chuyện về sức khỏe tâm thần của bạn.",
+                "time": "23:08:57 01-06-2025",
+                "message": "Xin chào! Tôi rất vui được trò chuyện với bạn về sức khỏe tâm thần. Tôi là một trợ lý AI chuyên về sức khỏe tâm thần, và tôi sẽ giúp bạn tìm hiểu về các vấn đề sức khỏe tâm thần.\n\nVề tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5, rối loạn lo âu là một rối loạn tâm thần được định nghĩa là một loạt các triệu chứng lo âu, căng thẳng, và khó chịu kéo dài hơn 6 tháng. Theo DSM-5, các triệu chứng của rối loạn lo âu bao gồm:\n\n* Lo âu hoặc căng thẳng kéo dài hơn 6 tháng\n* Lo âu hoặc căng thẳng gây khó khăn trong cuộc sống hàng ngày\n* Lo âu hoặc căng thẳng không được giải quyết sau khi có sự giúp đỡ\n* Lo âu hoặc căng thẳng gây ra khó khăn trong quan hệ với người khác\n\nĐể chẩn đoán rối loạn lo âu, bác sĩ sẽ đánh giá các triệu chứng của bạn và xem xét các yếu tố khác, chẳng hạn như lịch sử gia đình, kinh nghiệm cuộc sống, và các triệu chứng khác.\n\nTôi muốn hỏi bạn một câu hỏi: Bạn có cảm thấy lo âu hoặc căng thẳng trong cuộc sống hàng ngày không? (1 - Không bao giờ, 2 - Hiếm khi, 3 - Đôi khi, 4 - Thường xuyên, 5 - Luôn luôn)\n\nVui lòng trả lời câu hỏi này, và chúng ta sẽ tiếp tục trò chuyện về sức khỏe tâm thần của bạn."
+            },
+            {
+                "role": "user",
+                "content": "Tôi đang cảm thấy buồn, hãy tạo câu hỏi tâm lý cho tôi.",
+                "time": "23:11:27 01-06-2025",
+                "message": "Tôi đang cảm thấy buồn, hãy tạo câu hỏi tâm lý cho tôi."
+            },
+            {
+                "role": "assistant",
+                "content": "Xin chào! Tôi rất vui được trò chuyện với bạn. Tôi hiểu rằng bạn đang cảm thấy buồn và tôi muốn giúp bạn chia sẻ về cảm xúc này.\n\nĐể hiểu rõ hơn về cảm xúc của bạn, tôi sẽ hỏi một câu hỏi trắc nghiệm. Câu hỏi này sẽ giúp tôi hiểu rõ hơn về mức độ buồn của bạn và có thể giúp tôi đưa ra những gợi ý phù hợp.\n\nCâu hỏi của tôi là: \"Trong những ngày gần đây, bạn có bao nhiêu lần cảm thấy buồn?\" (1 - Không bao giờ, 2 - Hiếm khi, 3 - Đôi khi, 4 - Thường xuyên, 5 - Luôn luôn).\n\nHãy trả lời câu hỏi này và tôi sẽ tiếp tục trò chuyện với bạn.",
+                "time": "23:11:28 01-06-2025",
+                "message": "Xin chào! Tôi rất vui được trò chuyện với bạn. Tôi hiểu rằng bạn đang cảm thấy buồn và tôi muốn giúp bạn chia sẻ về cảm xúc này.\n\nĐể hiểu rõ hơn về cảm xúc của bạn, tôi sẽ hỏi một câu hỏi trắc nghiệm. Câu hỏi này sẽ giúp tôi hiểu rõ hơn về mức độ buồn của bạn và có thể giúp tôi đưa ra những gợi ý phù hợp.\n\nCâu hỏi của tôi là: \"Trong những ngày gần đây, bạn có bao nhiêu lần cảm thấy buồn?\" (1 - Không bao giờ, 2 - Hiếm khi, 3 - Đôi khi, 4 - Thường xuyên, 5 - Luôn luôn).\n\nHãy trả lời câu hỏi này và tôi sẽ tiếp tục trò chuyện với bạn."
+            },
+            {
+                "role": "user",
+                "content": "rối loạn tâm lí là gì?",
+                "time": "23:13:56 01-06-2025",
+                "message": "rối loạn tâm lí là gì?"
+            },
+            {
+                "role": "assistant",
+                "content": "Xin chào! Tôi là một trợ lý AI chuyên về sức khỏe tâm thần. Tôi rất vui được trò chuyện với bạn về vấn đề sức khỏe tâm thần.\n\nRối loạn tâm lý là một tình trạng sức khỏe tâm thần trong đó người mắc bệnh có thể trải qua các triệu chứng như lo âu, buồn, khó khăn trong việc tập trung, thay đổi cảm xúc, và các vấn đề khác. Rối loạn tâm lý có thể gây ảnh hưởng đến cuộc sống hàng ngày của người mắc bệnh, khiến họ khó khăn trong việc làm việc, quan hệ với người khác, và thậm chí là tự tử.\n\nTôi muốn hỏi bạn một câu hỏi: Bạn có bao giờ cảm thấy lo âu, buồn, hoặc khó khăn trong việc tập trung trong cuộc sống hàng ngày? (1 - Không bao giờ, 2 - Hiếm khi, 3 - Đôi khi, 4 - Thường xuyên, 5 - Luôn luôn)\n\nHãy chia sẻ với tôi về cảm xúc của bạn, và chúng ta sẽ tiếp tục trò chuyện về vấn đề sức khỏe tâm thần của bạn.",
+                "time": "23:13:57 01-06-2025",
+                "message": "Xin chào! Tôi là một trợ lý AI chuyên về sức khỏe tâm thần. Tôi rất vui được trò chuyện với bạn về vấn đề sức khỏe tâm thần.\n\nRối loạn tâm lý là một tình trạng sức khỏe tâm thần trong đó người mắc bệnh có thể trải qua các triệu chứng như lo âu, buồn, khó khăn trong việc tập trung, thay đổi cảm xúc, và các vấn đề khác. Rối loạn tâm lý có thể gây ảnh hưởng đến cuộc sống hàng ngày của người mắc bệnh, khiến họ khó khăn trong việc làm việc, quan hệ với người khác, và thậm chí là tự tử.\n\nTôi muốn hỏi bạn một câu hỏi: Bạn có bao giờ cảm thấy lo âu, buồn, hoặc khó khăn trong việc tập trung trong cuộc sống hàng ngày? (1 - Không bao giờ, 2 - Hiếm khi, 3 - Đôi khi, 4 - Thường xuyên, 5 - Luôn luôn)\n\nHãy chia sẻ với tôi về cảm xúc của bạn, và chúng ta sẽ tiếp tục trò chuyện về vấn đề sức khỏe tâm thần của bạn."
+            },
+            {
+                "role": "user",
+                "content": "tôi đang buồn hãy đưa ra lời khuyên",
+                "time": "23:17:45 01-06-2025",
+                "message": "tôi đang buồn hãy đưa ra lời khuyên"
+            },
+            {
+                "role": "assistant",
+                "content": "Mình hiểu bạn đang cảm thấy buồn. Hãy chọn mức độ dưới đây:\n\n**Câu hỏi**: Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?",
+                "time": "23:17:45 01-06-2025",
+                "message": "Mình hiểu bạn đang cảm thấy buồn. Hãy chọn mức độ dưới đây:\n\n**Câu hỏi**: Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?",
+                "question": "Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "**Câu hỏi**: Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?\n\nVới mức độ nhẹ, bạn có thể thử các kỹ thuật thư giãn như hít thở sâu. I'm an AI assistant specializing in mental health, and I'm here to provide you with accurate and updated information about mental health topics, including common mental disorders, symptoms, and treatment methods.\n\nBased on the provided text, it appears to be a description of the diagnostic criteria for Attention Deficit Hyperactivity Disorder (ADHD) according to the DSM-5. Here's a breakdown of the key points:\n\n* The symptoms of ADHD typically begin within 3 days to 1 month after exposure to a traumatic event.\n* The symptoms must be present for at least 3 days and up to 1 month to meet the diagnostic criteria.\n* The disorder can significantly impact social and occupational functioning.\n* The symptoms do not occur during the course of another mental disorder, such as Post-Traumatic Stress Disorder (PTSD) or other anxiety disorders.\n* The diagnostic criteria include both inattention (A1) and hyperactivity-impulsivity (A2) symptoms, which must be present for at least 6 months.\n\nIt's essential to note that ADHD is a complex disorder that requires a comprehensive diagnostic evaluation by a qualified mental health professional. While I can provide general information, it's crucial to consult with a professional for an accurate diagnosis and appropriate treatment.\n\nIf you or someone you know is experiencing symptoms of ADHD or any other mental health concern, please seek professional help. Remember, mental health is just as important as physical health, and seeking help is a sign of strength, not weakness.",
+                "time": "23:20:32 01-06-2025",
+                "message": "**Câu hỏi**: Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?\n\nVới mức độ nhẹ, bạn có thể thử các kỹ thuật thư giãn như hít thở sâu. I'm an AI assistant specializing in mental health, and I'm here to provide you with accurate and updated information about mental health topics, including common mental disorders, symptoms, and treatment methods.\n\nBased on the provided text, it appears to be a description of the diagnostic criteria for Attention Deficit Hyperactivity Disorder (ADHD) according to the DSM-5. Here's a breakdown of the key points:\n\n* The symptoms of ADHD typically begin within 3 days to 1 month after exposure to a traumatic event.\n* The symptoms must be present for at least 3 days and up to 1 month to meet the diagnostic criteria.\n* The disorder can significantly impact social and occupational functioning.\n* The symptoms do not occur during the course of another mental disorder, such as Post-Traumatic Stress Disorder (PTSD) or other anxiety disorders.\n* The diagnostic criteria include both inattention (A1) and hyperactivity-impulsivity (A2) symptoms, which must be present for at least 6 months.\n\nIt's essential to note that ADHD is a complex disorder that requires a comprehensive diagnostic evaluation by a qualified mental health professional. While I can provide general information, it's crucial to consult with a professional for an accurate diagnosis and appropriate treatment.\n\nIf you or someone you know is experiencing symptoms of ADHD or any other mental health concern, please seek professional help. Remember, mental health is just as important as physical health, and seeking help is a sign of strength, not weakness.",
+                "question": "Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            },
+            {
+                "role": "user",
+                "content": 1,
+                "time": "23:20:32 01-06-2025",
+                "message": 1
+            }
+        ]
+    },
+    {
+        "name": "bạn là ai?",
+        "messages": [
+            {
+                "role": "user",
+                "content": "bạn là ai?",
+                "time": "15:20:04 02-06-2025",
+                "message": "bạn là ai?"
+            },
+            {
+                "role": "assistant",
+                "content": "Đầu vào của bạn không rõ ràng. Vui lòng nhập câu hỏi hoặc chia sẻ cảm xúc để tôi hỗ trợ!\n\n**Ví dụ câu hỏi trực tiếp**: 'Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?'\n**Ví dụ yêu cầu câu hỏi trắc nghiệm**: 'Tôi đang cảm thấy buồn, hãy tạo câu hỏi tâm lý cho tôi.'",
+                "time": "15:20:04 02-06-2025",
+                "message": "Đầu vào của bạn không rõ ràng. Vui lòng nhập câu hỏi hoặc chia sẻ cảm xúc để tôi hỗ trợ!\n\n**Ví dụ câu hỏi trực tiếp**: 'Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?'\n**Ví dụ yêu cầu câu hỏi trắc nghiệm**: 'Tôi đang cảm thấy buồn, hãy tạo câu hỏi tâm lý cho tôi.'"
+            },
+            {
+                "role": "user",
+                "content": "Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?",
+                "time": "15:20:18 02-06-2025",
+                "message": "Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?"
+            },
+            {
+                "role": "assistant",
+                "content": "Xin chào! Tôi là một trợ lý AI chuyên về sức khỏe tâm thần. Tôi rất vui được trò chuyện với bạn.\n\nVề vấn đề của bạn, tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì? Tôi có thể giúp bạn hiểu rõ hơn về vấn đề này.\n\nRối loạn lo âu là một rối loạn tâm thần phổ biến, được đặc trưng bởi cảm giác lo âu, sợ hãi, hoặc căng thẳng kéo dài. Theo DSM-5, để chẩn đoán rối loạn lo âu, người ta cần đáp ứng ít nhất 3 trong 4 tiêu chuẩn sau:\n\n1. Cảm giác lo âu, sợ hãi, hoặc căng thẳng kéo dài hơn 6 tháng.\n2. Cảm giác lo âu, sợ hãi, hoặc căng thẳng này gây khó khăn trong cuộc sống hàng ngày.\n3. Cảm giác lo âu, sợ hãi, hoặc căng thẳng này không được giải thích bởi một rối loạn khác.\n4. Cảm giác lo âu, sợ hãi, hoặc căng thẳng này không được giải thích bởi một rối loạn khác.\n\nVì vậy, để chẩn đoán rối loạn lo âu, người ta cần xem xét các triệu chứng và tình trạng của người bệnh, cũng như xem xét các rối loạn khác có thể gây ra các triệu chứng này.\n\nTôi hy vọng thông tin này giúp bạn hiểu rõ hơn về vấn đề rối loạn lo âu. Nếu bạn có thêm câu hỏi hay muốn chia sẻ về vấn đề của mình, tôi rất sẵn sàng lắng nghe và giúp đỡ.\n\nXin chào!",
+                "time": "15:20:19 02-06-2025",
+                "message": "Xin chào! Tôi là một trợ lý AI chuyên về sức khỏe tâm thần. Tôi rất vui được trò chuyện với bạn.\n\nVề vấn đề của bạn, tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì? Tôi có thể giúp bạn hiểu rõ hơn về vấn đề này.\n\nRối loạn lo âu là một rối loạn tâm thần phổ biến, được đặc trưng bởi cảm giác lo âu, sợ hãi, hoặc căng thẳng kéo dài. Theo DSM-5, để chẩn đoán rối loạn lo âu, người ta cần đáp ứng ít nhất 3 trong 4 tiêu chuẩn sau:\n\n1. Cảm giác lo âu, sợ hãi, hoặc căng thẳng kéo dài hơn 6 tháng.\n2. Cảm giác lo âu, sợ hãi, hoặc căng thẳng này gây khó khăn trong cuộc sống hàng ngày.\n3. Cảm giác lo âu, sợ hãi, hoặc căng thẳng này không được giải thích bởi một rối loạn khác.\n4. Cảm giác lo âu, sợ hãi, hoặc căng thẳng này không được giải thích bởi một rối loạn khác.\n\nVì vậy, để chẩn đoán rối loạn lo âu, người ta cần xem xét các triệu chứng và tình trạng của người bệnh, cũng như xem xét các rối loạn khác có thể gây ra các triệu chứng này.\n\nTôi hy vọng thông tin này giúp bạn hiểu rõ hơn về vấn đề rối loạn lo âu. Nếu bạn có thêm câu hỏi hay muốn chia sẻ về vấn đề của mình, tôi rất sẵn sàng lắng nghe và giúp đỡ.\n\nXin chào!"
+            },
+            {
+                "role": "user",
+                "content": "Tôi đang cảm thấy buồn, hãy tạo câu hỏi tâm lý cho tôi.",
+                "time": "15:45:12 02-06-2025",
+                "message": "Tôi đang cảm thấy buồn, hãy tạo câu hỏi tâm lý cho tôi."
+            },
+            {
+                "role": "assistant",
+                "content": "Xin chào! Tôi là một trợ lý AI chuyên về sức khỏe tâm thần. Tôi rất vui được trò chuyện với bạn và giúp bạn chia sẻ về những vấn đề bạn đang gặp phải.\n\nTôi nghe bạn nói rằng bạn đang cảm thấy buồn. Tôi muốn hỏi, trong những ngày gần đây, bạn có bao giờ cảm thấy buồn đến mức không thể làm việc hay tham gia vào các hoạt động yêu thích của mình không? (1 - Không bao giờ, 2 - Hiếm khi, 3 - Đôi khi, 4 - Thường xuyên, 5 - Luôn luôn)\n\nHãy trả lời câu hỏi này và tôi sẽ tiếp tục trò chuyện với bạn.",
+                "time": "15:45:13 02-06-2025",
+                "message": "Xin chào! Tôi là một trợ lý AI chuyên về sức khỏe tâm thần. Tôi rất vui được trò chuyện với bạn và giúp bạn chia sẻ về những vấn đề bạn đang gặp phải.\n\nTôi nghe bạn nói rằng bạn đang cảm thấy buồn. Tôi muốn hỏi, trong những ngày gần đây, bạn có bao giờ cảm thấy buồn đến mức không thể làm việc hay tham gia vào các hoạt động yêu thích của mình không? (1 - Không bao giờ, 2 - Hiếm khi, 3 - Đôi khi, 4 - Thường xuyên, 5 - Luôn luôn)\n\nHãy trả lời câu hỏi này và tôi sẽ tiếp tục trò chuyện với bạn."
+            },
+            {
+                "role": "user",
+                "content": "tôi thấy buồn",
+                "time": "15:49:39 02-06-2025",
+                "message": "tôi thấy buồn"
+            },
+            {
+                "role": "assistant",
+                "content": "Mình hiểu bạn đang cảm thấy buồn. Hãy chọn mức độ dưới đây:\n\n**Câu hỏi**: Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?",
+                "time": "15:49:39 02-06-2025",
+                "message": "Mình hiểu bạn đang cảm thấy buồn. Hãy chọn mức độ dưới đây:\n\n**Câu hỏi**: Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?",
+                "question": "Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "**Câu hỏi**: Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?\n\nVới mức độ trung bình, bạn nên theo dõi thêm triệu chứng. I'm here to help you with any questions or concerns you may have about mental health. Based on the text you provided, it seems like you're looking for information on the diagnostic criteria for Attention Deficit Hyperactivity Disorder (ADHD) according to the DSM-5.\n\nAccording to the DSM-5, ADHD is characterized by symptoms of inattention, hyperactivity, and impulsivity. The symptoms must be present for at least 6 months and must cause significant impairment in social, occupational, or other important areas of functioning.\n\nThe diagnostic criteria for ADHD are as follows:\n\nA. Symptoms of inattention:\n  * Often fails to give close attention to details or makes careless mistakes\n  * Often has difficulty sustaining attention during tasks or activities\n  * Often does not seem to listen when spoken to directly\n  * Often fails to follow through on instructions and fails to complete tasks\n  * Often has difficulty organizing tasks and activities\n  * Often avoids tasks that require sustained mental effort\n  * Often loses things necessary for tasks or activities\n  * Often is easily distracted\n  * Often forgets important dates, appointments, or events\n  * Often has difficulty keeping track of belongings\n\nB. Symptoms of hyperactivity:\n  * Often fidgets with hands or feet\n  * Often leaves seat in situations where remaining seated is expected\n  * Often runs or climbs excessively\n  * Often has difficulty remaining seated during tasks or activities\n  * Often has difficulty engaging in quiet activities\n  * Often has difficulty playing quietly\n  * Often has difficulty engaging in leisure activities quietly\n  * Often has difficulty engaging in activities that require sustained mental effort\n\nC. Symptoms of impulsivity:\n  * Often blurts out answers before questions have been completed\n  * Often has difficulty waiting for turns\n  * Often interrupts others\n  * Often has difficulty remaining silent when expected\n  * Often has difficulty engaging in activities that require sustained mental effort\n\nD. The symptoms must be present for at least 6 months and must cause significant impairment in social, occupational, or other important areas of functioning.\n\nE. The symptoms must not be better explained by another mental disorder, such as a mood disorder, anxiety disorder, or personality disorder.\n\nF. The symptoms must not be caused by a substance or medication.\n\nG. The symptoms must not be caused by a medical condition.\n\nH. The symptoms must not be caused by a sleep disorder.\n\nI. The symptoms must not be caused by a neurological disorder.\n\nJ. The symptoms must not be caused by a Hãy cân nhắc tham khảo ý kiến chuyên gia.",
+                "time": "15:49:48 02-06-2025",
+                "message": "**Câu hỏi**: Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?\n\nVới mức độ trung bình, bạn nên theo dõi thêm triệu chứng. I'm here to help you with any questions or concerns you may have about mental health. Based on the text you provided, it seems like you're looking for information on the diagnostic criteria for Attention Deficit Hyperactivity Disorder (ADHD) according to the DSM-5.\n\nAccording to the DSM-5, ADHD is characterized by symptoms of inattention, hyperactivity, and impulsivity. The symptoms must be present for at least 6 months and must cause significant impairment in social, occupational, or other important areas of functioning.\n\nThe diagnostic criteria for ADHD are as follows:\n\nA. Symptoms of inattention:\n  * Often fails to give close attention to details or makes careless mistakes\n  * Often has difficulty sustaining attention during tasks or activities\n  * Often does not seem to listen when spoken to directly\n  * Often fails to follow through on instructions and fails to complete tasks\n  * Often has difficulty organizing tasks and activities\n  * Often avoids tasks that require sustained mental effort\n  * Often loses things necessary for tasks or activities\n  * Often is easily distracted\n  * Often forgets important dates, appointments, or events\n  * Often has difficulty keeping track of belongings\n\nB. Symptoms of hyperactivity:\n  * Often fidgets with hands or feet\n  * Often leaves seat in situations where remaining seated is expected\n  * Often runs or climbs excessively\n  * Often has difficulty remaining seated during tasks or activities\n  * Often has difficulty engaging in quiet activities\n  * Often has difficulty playing quietly\n  * Often has difficulty engaging in leisure activities quietly\n  * Often has difficulty engaging in activities that require sustained mental effort\n\nC. Symptoms of impulsivity:\n  * Often blurts out answers before questions have been completed\n  * Often has difficulty waiting for turns\n  * Often interrupts others\n  * Often has difficulty remaining silent when expected\n  * Often has difficulty engaging in activities that require sustained mental effort\n\nD. The symptoms must be present for at least 6 months and must cause significant impairment in social, occupational, or other important areas of functioning.\n\nE. The symptoms must not be better explained by another mental disorder, such as a mood disorder, anxiety disorder, or personality disorder.\n\nF. The symptoms must not be caused by a substance or medication.\n\nG. The symptoms must not be caused by a medical condition.\n\nH. The symptoms must not be caused by a sleep disorder.\n\nI. The symptoms must not be caused by a neurological disorder.\n\nJ. The symptoms must not be caused by a Hãy cân nhắc tham khảo ý kiến chuyên gia.",
+                "question": "Bạn cảm thấy buồn với tần suất như thế nào trong tuần qua?",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            },
+            {
+                "role": "user",
+                "content": 3,
+                "time": "15:49:48 02-06-2025",
+                "message": 3
+            }
+        ]
     }
 ]

@@ -8,3 +8,4 @@ gpt4all
 groq
 python-dotenv
 langchain-groq
+loguru
