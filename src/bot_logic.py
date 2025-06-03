@@ -5,7 +5,7 @@ from src.global_settings import CHAT_HISTORY_FILE
 from datetime import datetime
 
 class BotLogic:
-    def __init__(self, username: str = "demo_user", user_info: dict = {"name": "Người dùng Demo", "age": 25}):
+    def __init__(self, username: str = "demo_user", user_info: dict = {"name": "Người dùng", "age": 21}):
         # Khởi tạo ConversationEngine với username và user_info mặc định
         self.engine = ConversationEngine(username=username, user_info=user_info)
 
@@ -17,7 +17,7 @@ class BotLogic:
                 "response": (
                     "Vui lòng nhập câu hỏi hoặc chia sẻ cảm xúc để tôi hỗ trợ!\n\n"
                     "**Ví dụ câu hỏi trực tiếp**: 'Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?'\n"
-                    "**Ví dụ yêu cầu câu hỏi trắc nghiệm**: 'Tôi đang cảm thấy buồn, hãy tạo câu hỏi tâm lý cho tôi.'"
+                    "**Ví dụ yêu cầu câu hỏi trắc nghiệm**: 'Tôi đang cảm thấy buồn'"
                 )
             }
         
@@ -59,7 +59,7 @@ class BotLogic:
             "response": (
                 "Đầu vào của bạn không rõ ràng. Vui lòng nhập câu hỏi hoặc chia sẻ cảm xúc để tôi hỗ trợ!\n\n"
                 "**Ví dụ câu hỏi trực tiếp**: 'Tiêu chuẩn chẩn đoán rối loạn lo âu theo DSM-5 là gì?'\n"
-                "**Ví dụ yêu cầu câu hỏi trắc nghiệm**: 'Tôi thấy buồn, hãy tạo câu hỏi tâm lý cho tôi.'"
+                "**Ví dụ yêu cầu câu hỏi trắc nghiệm**: 'Tôi thấy buồn'"
             )
         }
 

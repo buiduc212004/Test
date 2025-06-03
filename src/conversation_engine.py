@@ -1,7 +1,7 @@
-# src/conversation_engine.py
 import os
 import streamlit as st
 import json
+import pandas as pd
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import GPT4AllEmbeddings
 from langchain.chains import RetrievalQA
@@ -22,6 +22,22 @@ class ConversationEngine:
         self.llm = using_llm_groq(api_key=api_key)
         self.db = self.load_vector_db()
         self.qa_chain = self.create_qa_chain()
+        # Đọc từ khóa từ file CSV
+        self.direct_query_keywords = self.load_keywords("data/keywords/direct_query_keywords.csv")
+        self.emotion_keywords = self.load_keywords("data/keywords/emotion_keywords.csv")
+        self.personal_keywords = self.load_keywords("data/keywords/personal_keywords.csv")
+        # Danh sách cảm xúc tích cực
+        self.positive_emotions = ["vui", "hạnh phúc", "phấn khởi", "hào hứng", "yêu đời", "thư giãn"]
+
+    def load_keywords(self, file_path):
+        """Đọc từ khóa từ file CSV"""
+        try:
+            df = pd.read_csv(file_path)
+            keywords = df["keyword"].dropna().tolist()
+            return keywords
+        except Exception as e:
+            logger.error(f"Lỗi khi đọc file {file_path}: {str(e)}")
+            return []
 
     def load_vector_db(self):
         try:
@@ -33,12 +49,19 @@ class ConversationEngine:
     def create_qa_chain(self):
         prompt = PromptTemplate(
             template=r"""
-    Bạn là một trợ lý AI chuyên về sức khỏe tâm thần, được thiết kế để hỗ trợ người dùng bằng tiếng Việt. Dựa trên thông tin từ DSM-5, hãy cung cấp câu trả lời chính xác và phù hợp với câu hỏi của người dùng. Nếu người dùng chọn mức độ cảm xúc, hãy phân tích mức độ đó (nhẹ, trung bình, nặng) và đưa ra gợi ý dựa trên tiêu chuẩn chẩn đoán DSM-5 liên quan đến cảm xúc được đề cập (ví dụ: buồn, lo âu, trầm cảm). Trả lời ngắn gọn, rõ ràng và hoàn toàn bằng tiếng Việt.
+Bạn là một trợ lý AI chuyên về sức khỏe tâm thần, được thiết kế để hỗ trợ người dùng bằng tiếng Việt. Dựa hoàn toàn trên thông tin từ DSM-5 trong cơ sở dữ liệu, hãy cung cấp câu trả lời chi tiết, đầy đủ và chính xác cho câu hỏi của người dùng. 
 
-    {context}
+- Nếu câu hỏi không liên quan đến cảm xúc cá nhân (như không chứa từ khóa từ emotion_keywords hoặc personal_keywords), hãy trả lời trực tiếp dựa trên định nghĩa, tiêu chuẩn chẩn đoán, triệu chứng, và điều trị từ DSM-5 mà không đưa ra câu hỏi trắc nghiệm.
+- Nếu câu hỏi liên quan đến cảm xúc cá nhân:
+  - Với cảm xúc tiêu cực (như buồn, lo âu, căng thẳng), phân tích mức độ (nhẹ, trung bình, nặng) và đưa ra gợi ý dựa trên tiêu chuẩn chẩn đoán DSM-5.
+  - Với cảm xúc tích cực (như vui, hạnh phúc, phấn khởi), giải thích ý nghĩa của cảm xúc đó trong bối cảnh sức khỏe tâm thần, cung cấp thông tin tích cực từ DSM-5 (nếu có) hoặc từ kiến thức tâm lý học chung, và đưa ra gợi ý để duy trì trạng thái tích cực. Không mặc định trả lời về rối loạn khi cảm xúc là tích cực.
 
-    Câu hỏi: {question}
-    """,
+Trả lời rõ ràng, chi tiết và hoàn toàn bằng tiếng Việt.
+
+{context}
+
+Câu hỏi: {question}
+""",
             input_variables=["context", "question"]
         )
         return RetrievalQA.from_chain_type(
@@ -52,7 +75,7 @@ class ConversationEngine:
     def chat(self, user_input):
         prompt = CUSTORM_AGENT_SYSTEM_TEMPLATE.format(user_info=self.user_info) + f"\n\nNgười dùng: {user_input}"
         response = self.qa_chain.invoke({"query": prompt})
-        return response.get("result", "Không tìm thấy thông tin phù hợp.")
+        return response.get("result", "Không tìm thấy thông tin phù hợp trong DSM-5.")
 
     def process_direct_query(self, prompt):
         response = self.chat(prompt)
@@ -64,13 +87,7 @@ class ConversationEngine:
 
     def generate_question(self, prompt):
         prompt_lower = prompt.lower()
-        emotion_keywords = [
-            "buồn", "vui", "hạnh phúc", "lo âu", "lo lắng", "stress", "áp lực", "căng thẳng", "mệt mỏi",
-            "tức giận", "sợ hãi", "hoang mang", "chán nản", "tự tin", "thất vọng", "hy vọng",
-            "sợ sệt", "bồn chồn", "phấn khởi", "u uất", "trầm cảm", "hào hứng", "mất ngủ",
-            "kích động", "thư giãn", "buồn chán", "tổn thương", "yêu đời"
-        ]
-        emotion = next((keyword for keyword in emotion_keywords if keyword in prompt_lower), None)
+        emotion = next((keyword for keyword in self.emotion_keywords if keyword in prompt_lower), None)
         
         if emotion:
             question = f"Trong tuần qua, bạn có cảm thấy {emotion} đến mức ảnh hưởng đến giấc ngủ, công việc hoặc các hoạt động hàng ngày không?"
@@ -89,21 +106,28 @@ class ConversationEngine:
             }
 
     def process_answer(self, prompt, question, answer):
-        emotion = next((keyword for keyword in [
-            "buồn", "lo âu", "lo lắng", "stress", "căng thẳng", "mệt mỏi", "tức giận", "sợ hãi",
-            "chán nản", "u uất", "trầm cảm", "mất ngủ"
-        ] if keyword in prompt.lower()), "buồn")
+        prompt_lower = prompt.lower()
+        emotion = next((keyword for keyword in self.emotion_keywords if keyword in prompt_lower), "buồn")
         severity_mapping = {"Không bao giờ": "nhẹ", "Hiếm khi": "nhẹ", "Đôi khi": "trung bình", "Thường xuyên": "nặng", "Luôn luôn": "rất nặng"}
         severity = severity_mapping.get(answer, "trung bình")
 
-        query = f"Tiêu chuẩn chẩn đoán rối loạn {emotion} theo DSM-5 với mức độ {severity}"
-        response = self.qa_chain.invoke({"query": query})
-        result = response.get("result", "Không tìm thấy thông tin phù hợp.")
+        # Kiểm tra xem cảm xúc có phải là tích cực không
+        is_positive_emotion = emotion in self.positive_emotions
 
-        return f"Dựa trên mức độ {severity}, {result}"
+        if is_positive_emotion:
+            # Với cảm xúc tích cực, trả lời tích cực và gợi ý duy trì trạng thái
+            query = f"Ý nghĩa của cảm xúc {emotion} trong sức khỏe tâm thần và gợi ý duy trì trạng thái tích cực"
+            response = self.qa_chain.invoke({"query": query})
+            result = response.get("result", "Không tìm thấy thông tin phù hợp trong DSM-5.")
+            return f"Dựa trên mức độ {severity}, cảm xúc {emotion} của bạn cho thấy một trạng thái tích cực. {result}"
+        else:
+            # Với cảm xúc tiêu cực, phân tích theo DSM-5
+            query = f"Tiêu chuẩn chẩn đoán rối loạn {emotion} theo DSM-5 với mức độ {severity}"
+            response = self.qa_chain.invoke({"query": query})
+            result = response.get("result", "Không tìm thấy thông tin phù hợp trong DSM-5.")
+            return f"Dựa trên mức độ {severity}, {result}"
 
 def chat_interface(username: str, user_info: dict, container):
-    # Tải lịch sử trò chuyện từ file
     chat_store = []
     if os.path.exists(CHAT_HISTORY_FILE) and os.path.getsize(CHAT_HISTORY_FILE) > 0:
         try:
@@ -116,7 +140,7 @@ def chat_interface(username: str, user_info: dict, container):
     if not chat_store:
         with container:
             with st.chat_message(name="assistant"):
-                st.markdown("Chào bạn, mình là Chatbot MENTHAL HEALTH được phát triển bởi PTIT Nhóm 17. Mình sẽ giúp bạn chăm sóc sức khỏe tinh thần. Hãy cho mình biết tình trạng của bạn hoặc bạn có thể trò chuyện với mình nhé!")
+                st.markdown("Chào bạn, mình là Chatbot. Mình sẽ giúp bạn chăm sóc sức khỏe tinh thần. Hãy cho mình biết tình trạng của bạn hoặc bạn có thể trò chuyện với mình nhé!")
 
     if "waiting_for_answer" not in st.session_state:
         st.session_state.waiting_for_answer = False
@@ -128,8 +152,6 @@ def chat_interface(username: str, user_info: dict, container):
         st.session_state.answered = False
 
     agent = ConversationEngine(username, user_info)
-
-    # Hiển thị lịch sử trò chuyện
     display_message(chat_store, container, username)
 
     user_input = st.chat_input("Nhập tin nhắn của bạn tại đây...",)
@@ -137,10 +159,7 @@ def chat_interface(username: str, user_info: dict, container):
         with container:
             with st.chat_message(name="user"):
                 st.markdown(user_input)
-            response_data = agent.generate_question(user_input) if any(keyword in user_input.lower() for keyword in ["tôi", "mình", "tớ"]) and any(emotion in user_input.lower() for emotion in [
-                "buồn", "lo âu", "lo lắng", "stress", "căng thẳng", "mệt mỏi", "tức giận", "sợ hãi",
-                "chán nản", "u uất", "trầm cảm", "mất ngủ"
-            ]) else agent.process_direct_query(user_input)
+            response_data = agent.generate_question(user_input) if any(keyword in user_input.lower() for keyword in agent.personal_keywords) and any(emotion in user_input.lower() for emotion in agent.emotion_keywords) else agent.process_direct_query(user_input)
             
             with st.chat_message(name="assistant"):
                 st.markdown(response_data.get("response", "Không tìm thấy thông tin phù hợp."))
@@ -167,7 +186,6 @@ def chat_interface(username: str, user_info: dict, container):
                         st.session_state.current_question = None
                         st.session_state.current_options = []
 
-        # Thêm tin nhắn vào chat_store và lưu vào file
         chat_store.append({"role": "user", "content": user_input, "time": datetime.now().strftime("%H:%M:%S %d-%m-%Y")})
         chat_store.append({"role": "assistant", "content": response_data.get("response", ""), "time": datetime.now().strftime("%H:%M:%S %d-%m-%Y")})
         try:
