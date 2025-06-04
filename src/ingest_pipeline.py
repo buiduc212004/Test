@@ -1,4 +1,3 @@
-# src/ingest_pipeline.py
 from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from src.global_settings import INGESTION_STORAGE_PATH

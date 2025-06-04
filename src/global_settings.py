@@ -1,4 +1,3 @@
-# src/global_settings.py
 import os
 
 # Đường dẫn

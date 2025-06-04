@@ -1,4 +1,3 @@
-# src/authenticate.py
 def authenticate_user(username, password):
     
     valid_users = {"user1": "pass123",

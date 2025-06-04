@@ -1,4 +1,3 @@
-# src/bot_logic.py
 import streamlit as st
 from src.conversation_engine import ConversationEngine
 from src.global_settings import CHAT_HISTORY_FILE

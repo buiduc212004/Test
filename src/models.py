@@ -1,6 +1,6 @@
 # src/models.py
 import os
-from src.common.utils import logger  # Cập nhật import
+from src.common.utils import logger
 from src.prompts import PROMT_HEADER
 from langchain_groq import ChatGroq
 

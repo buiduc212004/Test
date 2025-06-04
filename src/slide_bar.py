@@ -1,4 +1,3 @@
-# src/slide_bar.py
 import streamlit as st
 from src.global_settings import CHAT_HISTORY_FILE
 import json
